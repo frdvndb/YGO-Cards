@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CardListName">
+        <item name="android:textColor">@color/triadic500</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CardListDescription">
+        <item name="android:maxLines">3</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

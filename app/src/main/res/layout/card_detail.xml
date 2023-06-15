@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardDetail">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/card_image"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Card Name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_image"
+        android:textColor="@color/triadic500"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/card_more_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textStyle="bold"
+                android:textColor="@color/triadic200"/>
+
+            <TextView
+                android:id="@+id/card_type_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of the card" />
+
+            <TextView
+                android:id="@+id/card_sub_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Type"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:textColor="@color/triadic200"/>
+
+            <TextView
+                android:id="@+id/card_sub_type_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Type of the card" />
+
+            <TextView
+                android:id="@+id/card_atk_def"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ATK/DEF"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:textColor="@color/triadic200"/>
+
+            <TextView
+                android:id="@+id/card_atk_def_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ATK/DEF of the card" />
+
+            <TextView
+                android:id="@+id/card_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:textColor="@color/triadic200"/>
+
+            <TextView
+                android:id="@+id/card_description_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description of the card" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/card_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Information"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

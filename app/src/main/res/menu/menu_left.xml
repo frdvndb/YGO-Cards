@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_left_kashtira"
+            android:icon="@drawable/ic_nav_kashtira_24"
+            android:title="Kashtira" />
+
+        <item
+            android:id="@+id/menu_left_mannadium"
+            android:icon="@drawable/ic_nav_mannadium_24"
+            android:title="Mannadium" />
+
+        <item
+            android:id="@+id/menu_left_despia"
+            android:icon="@drawable/ic_nav_despia_24"
+            android:title="Despia" />
+
+        <item
+            android:id="@+id/menu_left_github"
+            android:icon="@drawable/github_mark"
+            android:title="Github" />
+    </group>
+
+</menu>
