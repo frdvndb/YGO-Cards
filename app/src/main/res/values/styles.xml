@@ -7,7 +7,7 @@
     </style>
     <style name="CardListDescription">
         <item name="android:maxLines">3</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:ellipsize">end</item>
     </style>
 </resources>

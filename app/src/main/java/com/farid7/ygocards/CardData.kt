@@ -1,7 +1,7 @@
 package com.farid7.ygocards
 
 import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class CardData(
@@ -25,7 +25,7 @@ val listCardKashtira = listOf<CardData>(
         R.drawable.card_kashtira_fenrir,
         "Kashtira Fenrir",
         "Effect Monster", "Psychic", "2400/2400",
-        "\tIf you control no monsters, you can Special Summon this card (from your hand). You can only use each of the following effects of \"Kashtira Fenrir\" once per turn. During your Main Phase: You can add 1 \"Kashtira\" monster from your Deck to your hand. When this card declares an attack, or if your opponent activates a monster effect (except during the Damage Step): ..."
+        "If you control no monsters, you can Special Summon this card (from your hand). You can only use each of the following effects of \"Kashtira Fenrir\" once per turn. During your Main Phase: You can add 1 \"Kashtira\" monster from your Deck to your hand. When this card declares an attack, or if your opponent activates a monster effect (except during the Damage Step): ..."
     ),
     CardData(
         R.drawable.card_kashtira_unicorn,
